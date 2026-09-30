@@ -7,6 +7,7 @@ public final class FactorySelector {
             case "agriculture", "farm" -> new AgricultureDroneFactory();
             case "rescue", "emergency" -> new RescueDroneFactory();
             case "surveillance", "observe" -> new SurveillanceDroneFactory();
+            case "security", "guard" -> new SecurityDroneFactory();
             default -> throw new IllegalArgumentException("Unknown family: " + value);
         };
     }
